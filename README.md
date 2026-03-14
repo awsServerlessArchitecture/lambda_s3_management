@@ -14,7 +14,7 @@ This project demonstrates how to use **AWS Lambda** with **Boto3** to automatica
 - Create a new bucket named:  
   **`heroviredb1`**
 - Upload multiple files for testing.
-![alt text](s3_bucket_status_before_test.png)
+![alt text](screenshots/s3_bucket_status_before_test.png)
 
 ---
 
@@ -111,10 +111,10 @@ Instead:
 2. Wait at least **10 minutes**.
 3. Invoke the Lambda function.
 4. The file should be deleted, and its name will appear in the logs.
-![alt text](lambda_s3_test_status.png)
+![alt text](screenshots/lambda_s3_test_status.png)
 
 This simulates the cleanup logic without needing genuinely old files. s3 bucket status after test, 10 minutes older file deleted
-![alt text](s3_bucket_status_after_test.png)
+![alt text](screenshots/s3_bucket_status_after_test.png)
 
 ---
 
@@ -134,7 +134,7 @@ Deleted file 'test1.txt' from bucket 'heroviredb1'
 Deleted file 'report.pdf' from bucket 'heroviredb1'
 Cleanup complete for bucket 'heroviredb1'
 ```
-![alt text](cloudwatch_logs_aftertest.png)
+![alt text](screenshots/cloudwatch_logs_aftertest.png)
 
 This ensures visibility into which files were removed and when.
 
